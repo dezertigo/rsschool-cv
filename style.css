@@ -1,0 +1,298 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+input,
+select,
+button,
+textarea {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-weight: bold;
+   line-height: 1;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  column-gap: 50px;
+}
+
+.header {
+  padding: 25px 0;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.logo__img {
+  max-width: 60px;
+}
+
+.menu {
+  margin: 0 auto;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__item + .menu__item {
+  margin-left: 40px;
+}
+
+.menu__item {
+  padding: 0px 15px;
+  position: relative;
+}
+
+.menu__link {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.menu__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  opacity: 0;
+  background-color: yellow;
+  transition: all 0.5s ease;
+}
+
+.menu__link:hover::after {
+  opacity: 1;
+}
+
+.menu__link:hover {
+  color: yellow;
+}
+
+.intro {
+  padding: 25px 0;
+  flex: 1 0 40%;
+}
+
+.info {
+  flex: 1 0 60%;
+}
+
+.about__title {
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+.about__suptitle {
+  margin-bottom: 30px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.about__img {
+  max-width: 256px;
+  border-radius: 50%;
+  border: 5px solid white;
+  transition: all 0.5s ease;
+  margin-bottom: 50px;
+}
+
+.section__title {
+ padding-bottom: 15px;
+ margin-bottom: 35px;
+ position: relative;
+ font-size: 32px;
+}
+
+.section__title::after {
+  content: '';
+  position: absolute;
+  max-width: 250px;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff50;
+  bottom: 0;
+  left: 0;
+}
+
+.about-me__text {
+  margin-bottom: 50px;
+}
+
+.skills__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.skills__img {
+  max-width: 64px;
+}
+
+.contacts {
+  padding: 25px 0;
+}
+
+.socials__list {
+  display: flex;
+  position: relative;
+}
+
+.socials__list::after {
+  content: '';
+  position: absolute;
+  max-width: 600px;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff50;
+  bottom: 10px;
+  left: 0;
+}
+
+.socials__item {
+  padding: 10px 30px 20px 60px;
+}
+
+.socials__item--network {
+  background: url(./images/socials/networkW.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 32px;
+}
+
+.socials__item--phone {
+  background: url(./images/socials/phoneW.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 32px;
+}
+
+.socials__item--mail {
+  background: url(./images/socials/mailW.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 32px;
+}
+
+.education {
+  padding: 25px 0;
+}  
+
+.education .section__title::after {
+  max-width: 600px;
+}
+
+.education__suptitle {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.education__date {
+  font-size: 14px;
+  color: #ffffff80;
+  margin-bottom: 10px;
+}
+
+.education__text {
+  margin-bottom: 15px;
+}
+
+.education__desc  {
+  max-width: 600px;
+  margin-bottom: 35px;
+}
+
+.lang {
+  padding: 0 0 25px 0;
+}
+
+.lang .section__title::after {
+  max-width: 600px;
+}
+
+.lang__inner  {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+}
+
+.lang__text {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.code {
+  padding-bottom: 25px;
+}
+
+.code .section__title::after {
+  max-width: 600px;
+}
+
+.code pre {
+  background-color: #111;
+  max-width: 600px;
+}
+
+.footer {
+  padding: 25px 0;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__img  {
+  max-width: 128px;
+}
