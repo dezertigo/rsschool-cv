@@ -4,18 +4,198 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>CV</title>
 </head>
 <body>
-  <header>
-
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="logo">
+          <img src="./images/icons/curriculum-vitaeW.png" alt="CV" class="logo__img">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">About</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Education</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Skills</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Hobbies</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
   <main>
-
+    <div class="container d-flex">
+      <section class="intro">
+        <div class="about">
+          <h1 class="about__title">
+            Yaroslav Korniienko
+          </h1>
+          <p class="about__suptitle">
+            Enthusiast
+          </p>
+          <img class="about__img" src="./images/photo.jpg" alt="photo">
+        </div>
+        <div class="about-me">
+          <h2 class="about-me__title section__title">
+            About me
+          </h2>
+          <p class="about-me__text">
+            I am 26 years old, I work in the IT field as a technical support engineer. I became interested in coding at the university, but did not pay due attention to it. Because of the work, coding began to capture me more and more and it turned into a hobby. And now I plan to turn my hobby into my work.
+          </p>
+        </div>
+        <ul class="skills__list">
+          <li class="skills__item" data-tooltip="Всплывающая подсказка">
+            <img src="./images/skills/skill-1W.png" alt="skill img" class="skills__img">
+          </li>
+          <li class="skills__item">
+            <img src="./images/skills/skill-2W.png" alt="skill img" class="skills__img">
+          </li>
+          <li class="skills__item">
+            <img src="./images/skills/skill-3W.png" alt="skill img" class="skills__img">
+          </li>
+          <li class="skills__item">
+            <img src="./images/skills/skill-4W.png" alt="skill img" class="skills__img">
+          </li>
+          <li class="skills__item">
+            <img src="./images/skills/skill-5W.png" alt="skill img" class="skills__img">
+          </li>
+          <li class="skills__item">
+            <img src="./images/skills/skill-6W.png" alt="skill img" class="skills__img">
+          </li>
+        </ul>
+      </section>
+      <section class="info">
+        <div class="contacts">
+          <ul class="socials__list">
+            <li class="socials__item socials__item--network">
+              <a href="https://www.facebook.com/yarik.korn">Facebook</a>
+            </li>
+            <li class="socials__item">
+              <a href="https://www.instagram.com/yarik.korn">Instagram</a>
+            </li>
+          </ul>
+          <ul class="socials__list">
+            <li class="socials__item socials__item--phone">
+              <a href="tel:+380960000001"> +380-96-000-00-01</a>
+            </li>
+            <li class="socials__item">
+              <a href="tel:+380670000002"> +380-67-000-00-02</a>
+            </li>
+          </ul>
+          <ul class="socials__list">
+            <li class="socials__item socials__item--mail">
+              <a href="mailto:yarik.korn@yahoo.com">yarik.korn@yahoo.com</a>
+            </li>
+            <li class="socials__item">
+              <a href="mailto:yarik.korniienko@gmail.com">yarik.korniienko@gmail.com</a>
+            </li>
+          </ul>
+          </div>
+          <div class="education">
+            <h2 class="section__title">
+              Education
+            </h2>
+            <h3 class="education__suptitle">
+              National aviation university
+            </h3>
+            <p class="education__date">
+              Sep 2013 - Mar 2019
+            </p>
+            <p class="education__text">
+              Master's degree Energy management
+            </p>
+            <p class="education__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nisi ducimus corrupti nihil perferendis! 
+            </p>
+            <h3 class="education__suptitle">
+              Web-design
+            </h3>
+            <p class="education__date">
+              Mar 2018 - May 2018
+            </p>
+            <p class="education__desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nisi ducimus corrupti nihil perferendis!
+            </p>
+          </div>
+          <div class="lang">
+            <h2 class="section__title">
+              Languages
+            </h2>
+            <div class="lang__inner">
+              <div class="lang__box">
+                <h3 class="lang__title">
+                  Ukrainian
+                </h3>
+                <p class="lang__text">
+                  Native
+                </p>
+              </div>
+              <div class="lang__box">
+                <h3 class="lang__title">
+                  Russian
+                </h3>
+                <p class="lang__text">
+                  Native
+                </p>
+              </div>
+              <div class="lang__box">
+                <h3 class="lang__title">
+                  English
+                </h3>
+                <p class="lang__text">
+                  Pre-intermediate
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="code">
+            <h3 class="section__title code__title">
+              Code example
+            </h3>
+<pre><code>
+    function findMultiples(integer, limit) {
+      let arr = [];
+      for (i = integer; i &lt;= limit; i += integer) {
+        arr.push(i);
+      }
+      return arr;
+    }
+  </code>
+</pre>
+          </div>
+      </section>
+    </div>
   </main>
-  <footer>
-
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="https://github.com/dezertigo" class="footer__git" target="_blank">
+          Visit my GitHub
+        </a>
+        <p class="footer__copy">
+          &COPY; 2022 All rights reserved
+        </p>
+        <a href="https://rs.school/js/" class="footer__link" target="_blank">
+          <img src="./images/rss-logo.png" alt="rs school" class="footer__img">
+        </a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
