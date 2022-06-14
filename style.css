@@ -203,21 +203,21 @@ body {
 }
 
 .socials__item--network {
-  background: url(../images/socials/networkW.png);
+  background: url(./images/socials/networkW.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 32px;
 }
 
 .socials__item--phone {
-  background: url(../images/socials/phoneW.png);
+  background: url(./images/socials/phoneW.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 32px;
 }
 
 .socials__item--mail {
-  background: url(../images/socials/mailW.png);
+  background: url(./images/socials/mailW.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 32px;
