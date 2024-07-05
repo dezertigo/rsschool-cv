@@ -270,6 +270,42 @@ body {
   margin-bottom: 20px;
 }
 
+.exp {
+  padding: 25px 0;
+}
+.exp .section__title::after {
+  max-width: 600px;
+}
+.exp__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 600px;
+}
+.exp__project {
+  position: relative;
+  overflow: hidden;
+}
+.exp__project::after {
+  position: absolute;
+  content: '';
+  inset: 0 0 0 0;
+  background-color: rgba(0,0,0,0);
+  transition: all .5s ease;
+}
+.exp__project:hover::after {
+  background-color: rgba(0,0,0,0.5);
+}
+.exp__desc {
+  position: absolute;
+  left: 10px;
+  transition: all .5s ease;
+  z-index: 2;
+}
+.exp__project:hover .exp__desc {
+  transform: translateY(-30px);
+}
 .code {
   padding-bottom: 25px;
 }
