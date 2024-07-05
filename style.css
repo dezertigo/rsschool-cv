@@ -41,7 +41,17 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #000;
+  background: url(./images/cv-bg.jpg) no-repeat;
+  background-size: cover;
   color: #fff;
+  position: relative;
+}
+body::before {
+  position: absolute;
+  content: '';
+  inset: 0 0 0 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,1) 100%);
+  z-index: -1;
 }
 
 .container {
@@ -200,6 +210,7 @@ body {
 
 .socials__item {
   padding: 10px 30px 20px 60px;
+  flex-basis: 40%;
 }
 
 .socials__item--network {
@@ -270,6 +281,51 @@ body {
   margin-bottom: 20px;
 }
 
+.exp {
+  padding: 25px 0;
+}
+
+.exp .section__title::after {
+  max-width: 600px;
+}
+
+.exp__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 600px;
+}
+
+.exp__project {
+  position: relative;
+  overflow: hidden;
+}
+
+.exp__project::after {
+  position: absolute;
+  content: '';
+  inset: 0 0 0 0;
+  background-color: rgba(0,0,0,0);
+  transition: all .5s ease;
+}
+
+.exp__project:hover::after {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.exp__desc {
+  position: absolute;
+  left: 10px;
+  transition: all .5s ease;
+  z-index: 2;
+  font-weight: 700;
+}
+
+.exp__project:hover .exp__desc {
+  transform: translateY(-30px);
+}
+
 .code {
   padding-bottom: 25px;
 }
@@ -279,7 +335,6 @@ body {
 }
 
 .code pre {
-  background-color: #111;
   max-width: 600px;
 }
 
